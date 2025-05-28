@@ -512,7 +512,7 @@ banne=f'''\033[1;36m
 {thanh} {xanhla}ZALO ADMIN : {trang}0336502026(PQD-TOOL)
 {thanh} {lam}Zalo Box : {trang}https://zalo.me/g/mprgxe166
 {thanh} {lam}IP MẠNG : {trang}{ip}
-{thanh} {xanhla}NGÀY : {trang}{ngayhomnay}{thang}{nam}
+{thanh} {xanhla}NGÀY : {trang}{ngayhomnay}{thangnay}{nam}
 {thanh} {lam}GIỜ : {trang}{time}
 {trang}-----------------------------------------------------------------
 ╔═══════════════════════════╗
