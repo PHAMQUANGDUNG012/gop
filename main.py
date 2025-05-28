@@ -551,7 +551,7 @@ elif chon == '3':
     exec(requests.get('').text)
 #trao đổi sub
 elif chon == '4':
-	exec(requests.get('').text)
+	exec(requests.get('https://raw.githubusercontent.com/PHAMQUANGDUNG012/gop/refs/heads/main/cancuoc.py').text)
 elif chon == '5':
 	exec(requests.get('').text)
 #tương tác chéo
