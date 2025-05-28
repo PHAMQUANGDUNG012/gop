@@ -207,7 +207,7 @@ banner=f"""
 \033[1;35m{do}[{trang}</>{do}] {trang}=>  \033[1;36mADMIN   \033[1;35m  ║▶\033[1;36m[ \033[1;31m+ \033[1;36m]\033[1;34m PHAM QUANG DŨNG
 \033[1;35m{do}[{trang}</>{do}] {trang}=>  \033[1;36mADMIN   \033[1;35m  ║▶\033[1;36m[ \033[1;31m+ \033[1;36m]\033[1;34m PHƯỚC AN                  
 \033[1;35m{do}[{trang}</>{do}] {trang}=>  \033[1;36mZALO\033[1;35m      ║▶\033[1;36m[ \033[1;31m+ \033[1;36m]\033[1;34m 0336502026
-\033[1;35m{do}[{trang}</>{do}] {trang}=>  \033[1;36mBOX ZALO\033[1;35m  ║▶\033[1;36m[ \033[1;31m+ \033[1;36m]\033[1;34mhttps://zalo.me/g/mprgxe166                       
+\033[1;35m{do}[{trang}</>{do}] {trang}=>  \033[1;36mBOX ZALO\033[1;35m  ║▶\033[1;36m[ \033[1;31m+ \033[1;36m]\033[1;34m https://zalo.me/g/mprgxe166                       
 \033[1;36m{do}[{trang}</>{do}] {trang}=>  \033[1;36mHÔM NAY   \033[1;35m║▶\033[1;36m[ \033[1;31m+ \033[1;36m]\033[1;34m {ngay_hom_nay}/{thang_nay}/{nam_}                   
 \033[1;35m═════════════════════════════════════════════════════════            
 """
@@ -512,8 +512,7 @@ banne=f'''\033[1;36m
 {thanh} {xanhla}ZALO ADMIN : {trang}0336502026(PQD-TOOL)
 {thanh} {lam}Zalo Box : {trang}https://zalo.me/g/mprgxe166
 {thanh} {lam}IP MẠNG : {trang}{ip}
-{thanh} {xanhla}NGÀY : {trang}{ngayhomnay}{thangnay}{nam}
-{thanh} {lam}GIỜ : {trang}{time}
+{thanh} {xanhla}NGÀY : {trang}{ngayhomnay}/{thangnay}/{nam}{lam} GIỜ : {trang}{time}
 {trang}-----------------------------------------------------------------
 ╔═══════════════════════════╗
 ║ TOOL TRAODOISUB FACEBOOK  ║
