@@ -551,14 +551,14 @@ elif chon == '3':
     exec(requests.get('').text)
 #trao đổi sub
 elif chon == '4':
-	exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/tdstikv2.py').text)
+	exec(requests.get('').text)
 elif chon == '5':
-	exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/ttttt%2B.py').text)
+	exec(requests.get('').text)
 #tương tác chéo
 elif chon == '6':
-	exec(requests.get('https://raw.githubusercontent.com/Cacdume-wq/cac/refs/heads/main/kkk.py').text)
-elif chon == '7':
 	exec(requests.get('').text)
+elif chon == '7':
+	exec(requests.get('https://raw.githubusercontent.com/PHAMQUANGDUNG012/gop/refs/heads/main/thoat.py').text)
 elif chon == '8':
 	exec(requests.get('').text)
 elif chon == '9':
