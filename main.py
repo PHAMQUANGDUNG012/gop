@@ -240,7 +240,7 @@ def generate_random_key(length=8):
 def generate_key(is_admin=False):
     """Tạo key, admin key không hết hạn."""
     if is_admin:
-        return "PQD-ADMIN"  # Key admin không có ngày hết hạn
+        return "PQD-TOOLADMIN"  # Key admin không có ngày hết hạn
     else:
         return f"PQD-{generate_random_key(6)}"  # Key user
 
@@ -269,9 +269,9 @@ def clean_expired_key():
                 key_time = datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
                 key_date = key_time.date()  # Ngày tạo key
                 # Nếu key không phải admin và đã qua ngày mới (00:00), bỏ qua
-                if not key.startswith("PQD-ADMIN") and key_date == current_date:
+                if not key.startswith("PQD-TOOLADMIN") and key_date == current_date:
                     updated_lines.append(line)
-                elif key.startswith("PQD-ADMIN"):  # Giữ lại key admin
+                elif key.startswith("PQD-TOOLADMIN"):  # Giữ lại key admin
                     updated_lines.append(line)
             except:
                 continue
@@ -285,7 +285,7 @@ def is_valid_key(key, expected_key):
     """Kiểm tra key có hợp lệ không."""
     clean_expired_key()  # Dọn dẹp key hết hạn trước
     
-    if key == "PQD-ADMIN":
+    if key == "PQD-TOOLADMIN":
         return True  # Key admin hợp lệ mọi lúc
     elif key == expected_key:  # So sánh với key đã tạo
         return True
@@ -308,7 +308,7 @@ def check_stored_key():
                 stored_key = stored_key.strip()
                 key_time = datetime.strptime(timestamp.strip(), "%Y-%m-%d %H:%M:%S")
                 key_date = key_time.date()  # Ngày tạo key
-                if stored_key == "PQD-ADMIN":
+                if stored_key == "PQD-TOOLADMIN":
                     return stored_key, stored_key  # Key admin luôn hợp lệ
                 elif stored_key.startswith("PQD-"):
                     if key_date == current_date:  # Key chỉ hợp lệ trong cùng ngày
@@ -319,7 +319,7 @@ def check_stored_key():
 
 # ======= Chạy Tool =======
 try:
-    admin_key = "PQD-ADMIN"
+    admin_key = "PQD-TOOLADMIN"
     
     # Kiểm tra xem có key nào còn hạn trong file không
     stored_key, user_key = check_stored_key()
