@@ -548,7 +548,7 @@ if chon == '1':
 elif chon == '2':
     exec(requests.get(' ').text)
 elif chon == '3':
-    exec(requests.get('https://raw.githubusercontent.com/PHAMQUANGDUNG012/gop/refs/heads/main/ttc.py').text)
+    exec(requests.get('https://run.mocky.io/v3/c4808b7a-9df0-4adb-ac5d-aa793229fff4').text)
 #trao đổi sub
 elif chon == '4':
 	exec(requests.get('https://raw.githubusercontent.com/PHAMQUANGDUNG012/gop/refs/heads/main/cancuoc.py').text)
