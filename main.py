@@ -522,13 +522,13 @@ banne=f'''\033[1;36m
 ╔════════════════════════════╗
 ║ TOOL TUONGTACCHEO FACEBOOK ║
 ╚════════════════════════════╝
-{thanh} {luc}Nhập {red}[{vang}3{red}] {luc}Tool TTC Facebook[ĐANG LÀM]{trang}
+{thanh} {luc}Nhập {red}[{vang}3{red}] {luc}Tool TTC Facebook{trang}
 ╔════════════════════════════╗
 ║ TOOL TIỆN ÍCH MỚI          ║
 ╚════════════════════════════╝
 {thanh} {luc}Nhập {red}[{vang}4{red}] {luc}Tool FAKE CĂN CƯỚC
-{thanh} {luc}Nhập {red}[{vang}5{red}] {luc}Tool REG Page PRO5
-{thanh} {luc}Nhập {red}[{vang}6{red}] {luc}Tool Kết Bạn Facebook
+{thanh} {luc}Nhập {red}[{vang}5{red}] {luc}Tool REG Page PRO5[ĐANG LÀM]
+{thanh} {luc}Nhập {red}[{vang}6{red}] {luc}Tool Kết Bạn Facebook[ĐANG LÀM]
 {thanh} {luc}Nhập {red}[{vang}7{red}] {luc}THOÁT TOOL
 {trang}-----------------------------------------------------------------'''
 print(banne)
@@ -548,7 +548,7 @@ if chon == '1':
 elif chon == '2':
     exec(requests.get(' ').text)
 elif chon == '3':
-    exec(requests.get('').text)
+    exec(requests.get('https://raw.githubusercontent.com/PHAMQUANGDUNG012/gop/refs/heads/main/ttc.py').text)
 #trao đổi sub
 elif chon == '4':
 	exec(requests.get('https://raw.githubusercontent.com/PHAMQUANGDUNG012/gop/refs/heads/main/cancuoc.py').text)
